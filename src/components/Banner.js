@@ -6,7 +6,7 @@ function Banner() {
   return (
     <Box
       sx={{
-        backgroundImage: 'url("/images/banner.jpg")',
+        backgroundImage: `url(${process.env.PUBLIC_URL}/images/banner.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "100%",

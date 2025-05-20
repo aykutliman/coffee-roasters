@@ -10,7 +10,7 @@ function Logo({ color = "textPrimary", ...props }) {
       }}
     >
       <img
-        src="/images/icon.jpg"
+        src={process.env.PUBLIC_URL + "/images/icon.jpg"}
         alt="coffeeroasters logo"
         style={{
           height: "40px",

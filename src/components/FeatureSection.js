@@ -53,21 +53,21 @@ function FeatureSection() {
         <Grid container spacing={4} justifyContent="center">
           <Grid item sm={12} md={6} lg={3}>
             <FeatureCard
-              image="/images/bean.jpg"
+              image={process.env.PUBLIC_URL + "/images/bean.jpg"}
               title="Best quality"
               description="Discover an endless variety of the world's best artisan coffee from each of our roasters."
             />
           </Grid>
           <Grid item sm={12} md={6} lg={3}>
             <FeatureCard
-              image="/images/gift.jpg"
+              image={process.env.PUBLIC_URL + "/images/gift.jpg"}
               title="Exclusive benefits"
               description="Special offers and swag when you subscribe, including 30% off your first shipment."
             />
           </Grid>
           <Grid item sm={12} md={6} lg={3}>
             <FeatureCard
-              image="/images/truck.jpg"
+              image={process.env.PUBLIC_URL + "/images/truck.jpg"}
               title="Free shipping"
               description="We cover the cost and coffee is delivered fast. Peak freshness: guaranteed."
             />

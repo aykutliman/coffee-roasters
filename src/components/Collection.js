@@ -45,7 +45,7 @@ function Collection() {
             sx={{ display: "flex", justifyContent: "center" }}
           >
             <CoffeeCard
-              image="/images/coffee.jpg"
+              image={process.env.PUBLIC_URL + "/images/coffee.jpg"}
               title="Gran Espresso"
               description="Light and flavorful blend with cocoa and black pepper for an intense experience."
             />
@@ -58,7 +58,7 @@ function Collection() {
             sx={{ display: "flex", justifyContent: "center" }}
           >
             <CoffeeCard
-              image="/images/coffee.jpg"
+              image={process.env.PUBLIC_URL + "/images/coffee.jpg"}
               title="Planalto"
               description="Brazilian dark roast with rich and velvety body, and hints of fruits and nuts."
             />
@@ -71,7 +71,7 @@ function Collection() {
             sx={{ display: "flex", justifyContent: "center" }}
           >
             <CoffeeCard
-              image="/images/coffee.jpg"
+              image={process.env.PUBLIC_URL + "/images/coffee.jpg"}
               title="Piccollo"
               description="Mild and smooth blend featuring notes of toasted almond and dried cherry."
             />
@@ -84,7 +84,7 @@ function Collection() {
             sx={{ display: "flex", justifyContent: "center" }}
           >
             <CoffeeCard
-              image="/images/coffee.jpg"
+              image={process.env.PUBLIC_URL + "/images/coffee.jpg"}
               title="Danche"
               description="Ethiopian hand-harvested blend densely packed with vibrant fruit notes."
             />
