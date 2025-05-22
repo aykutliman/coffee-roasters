@@ -10,15 +10,15 @@ function Navbar() {
       sx={{
         backgroundColor: "white",
         boxShadow: "none",
-        padding: { sm: "1rem", md: "1rem 3rem" },
+        padding: { xs: "0.5rem", sm: "1rem", md: "1rem 3rem" },
       }}
     >
       <Toolbar
         sx={{
-          flexDirection: { sm: "column", md: "row" },
-          gap: { sm: 2, md: 0 },
+          flexDirection: { xs: "column", sm: "column", md: "row" },
+          gap: { xs: 1, sm: 2, md: 0 },
           alignItems: "center",
-          justifyContent: { sm: "center", md: "space-between" },
+          justifyContent: { xs: "center", sm: "center", md: "space-between" },
         }}
       >
         <Box
@@ -26,14 +26,14 @@ function Navbar() {
             display: "flex",
             alignItems: "center",
             width: "100%",
-            justifyContent: { sm: "space-between", md: "flex-start" },
+            justifyContent: { xs: "space-between", sm: "space-between", md: "flex-start" },
           }}
         >
           <Logo />
 
           <IconButton
             sx={{
-              display: { sm: "flex", md: "none" },
+              display: { xs: "flex", sm: "flex", md: "none" },
               color: "black",
             }}
             component="a"

@@ -12,17 +12,18 @@ function Footer() {
       sx={{
         backgroundColor: "#202A2B",
         boxShadow: "none",
-        padding: { sm: "1rem", md: "1rem 3rem" },
-        margin: { sm: "2rem 1rem", md: "4rem" },
+        padding: { xs: "0.5rem", sm: "1rem", md: "1rem 3rem" },
+        margin: { xs: "1rem 0.5rem", sm: "2rem 1rem", md: "4rem" },
         width: "auto",
       }}
     >
       <Toolbar
         sx={{
-          flexDirection: { sm: "column", md: "row", lg: "row" },
-          gap: { sm: 3, md: 0, lg: 0 },
+          flexDirection: { xs: "column", sm: "column", md: "row", lg: "row" },
+          gap: { xs: 2, sm: 3, md: 0, lg: 0 },
           alignItems: "center",
           justifyContent: {
+            xs: "center",
             sm: "center",
             md: "space-between",
             lg: "space-between",
@@ -33,8 +34,9 @@ function Footer() {
           sx={{
             display: "flex",
             alignItems: "center",
-            width: { sm: "100%", md: "auto", lg: "auto" },
+            width: { xs: "100%", sm: "100%", md: "auto", lg: "auto" },
             justifyContent: {
+              xs: "center",
               sm: "center",
               md: "flex-start",
               lg: "flex-start",
@@ -50,8 +52,9 @@ function Footer() {
           sx={{
             display: "flex",
             gap: 2,
-            width: { sm: "100%", md: "auto", lg: "auto" },
+            width: { xs: "100%", sm: "100%", md: "auto", lg: "auto" },
             justifyContent: {
+              xs: "center",
               sm: "center",
               md: "flex-start",
               lg: "flex-start",

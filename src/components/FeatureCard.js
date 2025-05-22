@@ -6,14 +6,14 @@ function FeatureCard({ image, title, description }) {
     <Box
       sx={{
         display: "flex",
-        flexDirection: { sm: "column", md: "row", lg: "column" },
+        flexDirection: { xs: "column", sm: "column", md: "row", lg: "column" },
         alignItems: "center",
         textAlign: "center",
         justifyContent: "center",
         backgroundColor: "#1A8C89",
         borderRadius: "12px",
-        width: { sm: "20rem", md: "33rem", lg: "20rem" },
-        height: { sm: "20rem", md: "10rem", lg: "20rem" },
+        width: { xs: "15rem", sm: "20rem", md: "33rem", lg: "20rem" },
+        height: { xs: "15rem", sm: "20rem", md: "10rem", lg: "20rem" },
         padding: "1rem",
       }}
     >
@@ -22,14 +22,15 @@ function FeatureCard({ image, title, description }) {
         src={image}
         alt={title}
         sx={{
-          width: "8rem",
-          height: "8rem",
+          width: { xs: "6rem", sm: "8rem" },
+          height: { xs: "6rem", sm: "8rem" },
           borderRadius: "20px",
         }}
       />
       <Box
         sx={{
           ml: {
+            xs: 0,
             sm: 0,
             md: 2,
             lg: 0,

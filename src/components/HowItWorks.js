@@ -37,7 +37,7 @@ function HowItWorks() {
         isTitle
         sx={{
           mb: 3,
-          textAlign: { sm: "center", md: "left", lg: "left" },
+          textAlign: { xs: "center", sm: "center", md: "left", lg: "left" },
         }}
       >
         How it works

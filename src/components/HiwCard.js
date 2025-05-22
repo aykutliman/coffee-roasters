@@ -5,16 +5,16 @@ function HiwCard({ number, title, description }) {
     <Box sx={{ 
       display: "flex", 
       flexDirection: "column",
-      alignItems: {  sm: "center", md: "flex-start" }
+      alignItems: { xs: "center", sm: "center", md: "flex-start" }
     }}>
       <Typography
         variant="h2"
         sx={{
           color: "#FFDFB9",
-          fontSize: "6rem",
+          fontSize: { xs: "4rem", sm: "6rem" },
           fontWeight: 700,
           mb: 2,
-          textAlign: {  sm: "center", md: "left" },
+          textAlign: { xs: "center", sm: "center", md: "left" },
           fontFamily: "Fraunces",
         }}
       >
@@ -24,7 +24,7 @@ function HiwCard({ number, title, description }) {
         variant="h5"
         sx={{
           mb: 2,
-          textAlign: {  sm: "center", md: "left" },
+          textAlign: { xs: "center", sm: "center", md: "left" },
           fontFamily: "Fraunces",
           fontWeight: 900,
         }}
@@ -34,8 +34,8 @@ function HiwCard({ number, title, description }) {
       <Typography 
         variant="body1" 
         sx={{ 
-          width: {  sm: "100%", md: "300px" },
-          textAlign: {  sm: "center", md: "left" }
+          width: { xs: "100%", sm: "100%", md: "300px" },
+          textAlign: { xs: "center", sm: "center", md: "left" }
         }}
       >
         {description}

@@ -6,7 +6,7 @@ function CoffeeCard({ image, title, description }) {
     <Box
       sx={{
         display: "flex",
-        flexDirection: { sm: "column", md: "row", lg: "column" },
+        flexDirection: { xs: "column", sm: "column", md: "row", lg: "column" },
         alignItems: "center",
         textAlign: "center",
       }}
@@ -16,14 +16,15 @@ function CoffeeCard({ image, title, description }) {
         src={image}
         alt={title}
         sx={{
-          width: "10rem",
-          height: "10rem",
+          width: { xs: "8rem", sm: "10rem" },
+          height: { xs: "8rem", sm: "10rem" },
           borderRadius: "20px",
         }}
       />
       <Box
         sx={{
           ml: {
+            xs: 0,
             sm: 0,
             md: 10,
             lg: 0,
@@ -33,7 +34,7 @@ function CoffeeCard({ image, title, description }) {
         <CustomTypography variant="h4" isTitle sx={{ mt: 4 }}>
           {title}
         </CustomTypography>
-        <CustomTypography variant="h5" sx={{ width: "250px", mt: 2 }}>
+        <CustomTypography variant="h5" sx={{ width: { xs: "100%", sm: "250px" }, mt: 2 }}>
           {description}
         </CustomTypography>
       </Box>

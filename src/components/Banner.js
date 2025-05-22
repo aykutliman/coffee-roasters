@@ -12,8 +12,8 @@ function Banner() {
         height: "100%",
         display: "flex",
         flexDirection: "column",
-        padding: "7rem 3rem",
-        margin: "1rem 3rem",
+        padding: { xs: "4rem 1rem", sm: "7rem 3rem" },
+        margin: { xs: "0.5rem 1rem", sm: "1rem 3rem" },
         borderRadius: "10px",
       }}
     >
@@ -22,7 +22,7 @@ function Banner() {
         isTitle
         color="white"
         sx={{
-          width: "400px",
+          width: { xs: "100%", sm: "400px" },
         }}
       >
         Great coffee made simple.
@@ -33,7 +33,7 @@ function Banner() {
         color="white"
         sx={{
           mt: 4,
-          width: { sm: "100%", md: "400px", lg: "400px" },
+          width: { xs: "100%", sm: "100%", md: "400px", lg: "400px" },
         }}
       >
         Start your mornings with the world's best coffees. Try our expertly

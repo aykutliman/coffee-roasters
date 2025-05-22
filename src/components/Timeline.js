@@ -5,8 +5,8 @@ function Timeline({ items }) {
   return (
     <Grid
       container
-      spacing={{ sm: 3, md: 3, lg: 8 }}
-      justifyContent={{ sm: "center", md: "flex-start" }}
+      spacing={{ xs: 2, sm: 3, md: 3, lg: 8 }}
+      justifyContent={{ xs: "center", sm: "center", md: "flex-start" }}
       sx={{ ml: 0, pl: 0, position: "relative" }}
     >
       <Box
@@ -17,7 +17,7 @@ function Timeline({ items }) {
           width: { md: "40rem", lg: "45rem" },
           height: "2px",
           backgroundColor: "#FFDFB9",
-          display: { sm: "none", md: "block" },
+          display: { xs: "none", sm: "none", md: "block" },
           zIndex: 0,
         }}
       />
@@ -25,6 +25,7 @@ function Timeline({ items }) {
       {items.map((item, index) => (
         <Grid
           item
+          xs={12}
           sm={12}
           md={12}
           lg={4}
@@ -33,7 +34,7 @@ function Timeline({ items }) {
             pl: 0,
             display: "flex",
             flexDirection: "column",
-            alignItems: { sm: "center", md: "flex-start" },
+            alignItems: { xs: "center", sm: "center", md: "flex-start" },
           }}
         >
           <Box
@@ -46,7 +47,7 @@ function Timeline({ items }) {
               margin: "0 0 1rem",
               position: "relative",
               zIndex: 1,
-              display: { sm: "none", md: "block" },
+              display: { xs: "none", sm: "none", md: "block" },
             }}
           />
           <HiwCard

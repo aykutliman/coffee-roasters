@@ -5,16 +5,16 @@ function NavigationButtons({ color = "black", isFooter = false, ...props }) {
     color: color,
     whiteSpace: "nowrap",
     padding: "6px 12px",
-    width: isFooter ? { sm: "100%", md: "auto", lg: "auto" } : "auto",
+    width: isFooter ? { xs: "100%", sm: "100%", md: "auto", lg: "auto" } : "auto",
   };
 
   return (
     <ButtonGroup
       sx={{
-        display: { sm: isFooter ? "flex" : "none", md: "flex" },
-        flexDirection: { sm: isFooter ? "column" : "row", md: "row" },
+        display: { xs: isFooter ? "flex" : "none", sm: isFooter ? "flex" : "none", md: "flex" },
+        flexDirection: { xs: isFooter ? "column" : "row", sm: isFooter ? "column" : "row", md: "row" },
         alignItems: "center",
-        width: isFooter ? { sm: "100%", md: "auto", lg: "auto" } : "auto",
+        width: isFooter ? { xs: "100%", sm: "100%", md: "auto", lg: "auto" } : "auto",
         ...props.sx,
       }}
     >
