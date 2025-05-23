@@ -23,7 +23,9 @@ function FeatureSection() {
           zIndex: 0,
         }}
       >
-        <CustomTypography variant="h4" isTitle color="white" sx={{ mt: { xs: 0, sm: 0, md: 2, lg: 2 } }}>
+        <CustomTypography variant="h4" isTitle color="white" sx={{ mt: { xs: 5, sm: 3, md: 2, lg: 2 } }}
+        fontSize={{ xs: "1.5rem", sm: "2rem", md: "3rem", lg: "3rem" }}
+        >
           Why choose us?
         </CustomTypography>
         <CustomTypography
@@ -33,6 +35,7 @@ function FeatureSection() {
             mt: { xs: 2, sm: 4, md: 4, lg: 4 },
             width: { xs: "100%", sm: "100%", md: "40rem", lg: "40rem" },
             mx: "auto",
+            fontSize: { xs: "1rem", sm: "1rem", md: "1.25rem", lg: "1.25rem" },
           }}
         >
           A large part of our role is choosing which particular coffees will be

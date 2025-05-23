@@ -18,13 +18,19 @@ function NavigationButtons({ color = "black", isFooter = false, ...props }) {
         ...props.sx,
       }}
     >
-      <Button variant="h5" sx={buttonStyle}>
+      <Button variant="h5" sx={buttonStyle}
+      fontSize={{ xs: "1rem", sm: "1rem", md: "1.25rem", lg: "1.25rem" }}
+      >
         HOME
       </Button>
-      <Button variant="h5" sx={buttonStyle}>
+      <Button variant="h5" sx={buttonStyle}
+      fontSize={{ xs: "1rem", sm: "1rem", md: "1.25rem", lg: "1.25rem" }}
+      >
         ABOUT US
       </Button>
-      <Button variant="h5" sx={buttonStyle}>
+      <Button variant="h5" sx={buttonStyle}
+      fontSize={{ xs: "1rem", sm: "1rem", md: "1.25rem", lg: "1.25rem" }}
+      >
         CREATE YOUR PLAN
       </Button>
     </ButtonGroup>

@@ -1,9 +1,49 @@
-import { AppBar, Toolbar, Box, IconButton } from "@mui/material";
+import { AppBar, Toolbar, Box, IconButton, Drawer, ButtonGroup, Button } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "./Logo";
 import NavigationButtons from "./NavigationButtons";
+import { useState } from "react";
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(!open);
+  };
+
+  const menuItems = ["HOME", "ABOUT US", "CREATE YOUR PLAN"];
+
+  const buttonStyle = {
+    color: "black",
+    whiteSpace: "nowrap",
+    padding: "6px 12px",
+    width: "auto",
+  };
+
+  const drawer = (
+    <ButtonGroup
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        width: "100%",
+        mt: 4,
+        gap: 2,
+      }}
+    >
+      {menuItems.map((item) => (
+        <Button
+          key={item}
+          variant="h5"
+          onClick={handleClick}
+          sx={buttonStyle}
+        >
+          {item}
+        </Button>
+      ))}
+    </ButtonGroup>
+  );
+
   return (
     <AppBar
       position="static"
@@ -36,8 +76,7 @@ function Navbar() {
               display: { xs: "flex", sm: "flex", md: "none" },
               color: "black",
             }}
-            component="a"
-            href="#menu"
+            onClick={handleClick}
           >
             <MenuIcon />
           </IconButton>
@@ -45,6 +84,27 @@ function Navbar() {
 
         <NavigationButtons />
       </Toolbar>
+
+      <Drawer
+        variant="temporary"
+        anchor="right"
+        open={open}
+        onClose={handleClick}
+        ModalProps={{
+          keepMounted: true,
+        }}
+        sx={{
+          display: { xs: "block", sm: "block", md: "none" },
+          "& .MuiDrawer-paper": { 
+            boxSizing: "border-box", 
+            width: "100%",
+            backgroundColor: "#FEFCF7",
+            padding: "2rem",
+          },
+        }}
+      >
+        {drawer}
+      </Drawer>
     </AppBar>
   );
 }

@@ -37,10 +37,14 @@ function FeatureCard({ image, title, description }) {
           },
         }}
       >
-        <CustomTypography variant="h5" isTitle color="white" sx={{ mt: 2 }}>
+        <CustomTypography variant="h5" isTitle color="white" sx={{ mt: 2 }}
+        fontSize={{ xs: "1rem", sm: "1rem", md: "1.25rem", lg: "1.25rem" }}
+        >
           {title}
         </CustomTypography>
-        <CustomTypography variant="p" color="white" sx={{ mt: 1 }}>
+        <CustomTypography variant="p" color="white" sx={{ mt: 1 }}
+        fontSize={{ xs: "0.8rem", sm: "0.8rem", md: "1rem", lg: "1rem" }}
+        >
           {description}
         </CustomTypography>
       </Box>

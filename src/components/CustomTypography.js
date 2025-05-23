@@ -12,7 +12,7 @@ function CustomTypography({
       sx={{
         fontFamily: "Fraunces",
         fontWeight: isTitle
-          ? { xs: 900, sm: 900, md: 400, lg: 400 }
+          ? { xs: 400, sm: 400, md: 900, lg: 900 }
           : { xs: 200, sm: 200, md: 400, lg: 400 },
         textAlign: { xs: "center", sm: "center", md: "center", lg: "center" },
         mb: props.mb || 2,

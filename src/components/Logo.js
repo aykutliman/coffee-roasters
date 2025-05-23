@@ -25,7 +25,7 @@ function Logo({ color = "textPrimary", ...props }) {
         color={color}
         sx={{
           fontFamily: "Fraunces",
-          fontWeight: 900,
+          fontWeight: { xs: 400, sm: 400, md: 900, lg: 900 },
         }}
       >
         coffeeroasters

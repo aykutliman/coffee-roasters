@@ -23,6 +23,7 @@ function Banner() {
         color="white"
         sx={{
           width: { xs: "100%", sm: "400px" },
+          fontSize: { xs: "2rem", sm: "3rem", md: "4rem", lg: "4rem" }
         }}
       >
         Great coffee made simple.
@@ -34,6 +35,7 @@ function Banner() {
         sx={{
           mt: 4,
           width: { xs: "100%", sm: "100%", md: "400px", lg: "400px" },
+          fontSize: { xs: "1rem", sm: "1rem", md: "1.25rem", lg: "1.25rem" }
         }}
       >
         Start your mornings with the world's best coffees. Try our expertly

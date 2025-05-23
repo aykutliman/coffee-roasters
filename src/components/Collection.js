@@ -11,7 +11,7 @@ function Collection() {
       }}
     >
       <CustomTypography
-        variant="h1"
+        variant="h2"
         isTitle
         sx={{
           position: "absolute",
@@ -20,7 +20,7 @@ function Collection() {
           fontSize: { xs: "3rem", sm: "3rem", md: "7rem" },
           whiteSpace: "nowrap",
           zIndex: 0,
-          pointerEvents: "none",
+          pointerEvents: "none", 
         }}
       >
         our collection

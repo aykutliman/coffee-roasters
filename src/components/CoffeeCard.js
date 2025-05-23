@@ -31,10 +31,12 @@ function CoffeeCard({ image, title, description }) {
           },
         }}
       >
-        <CustomTypography variant="h4" isTitle sx={{ mt: 4 }}>
+        <CustomTypography variant="h4" isTitle sx={{ mt: 4 }}   
+        fontSize={{ xs: "1.5rem", sm: "2rem", md: "2.5rem", lg: "2.5rem" }}>
           {title}
         </CustomTypography>
-        <CustomTypography variant="h5" sx={{ width: { xs: "100%", sm: "250px" }, mt: 2 }}>
+        <CustomTypography variant="h5" sx={{ width: { xs: "100%", sm: "250px" }, mt: 2 }}
+          fontSize={{ xs: "1rem", sm: "1rem", md: "1.25rem", lg: "1.25rem" }}>
           {description}
         </CustomTypography>
       </Box>

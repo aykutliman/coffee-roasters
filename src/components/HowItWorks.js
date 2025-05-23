@@ -38,6 +38,7 @@ function HowItWorks() {
         sx={{
           mb: 3,
           textAlign: { xs: "center", sm: "center", md: "left", lg: "left" },
+          fontSize: { xs: "1.5rem", sm: "2rem", md: "3rem", lg: "3rem" },
         }}
       >
         How it works
