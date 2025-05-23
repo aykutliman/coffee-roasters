@@ -16,7 +16,7 @@ function HiwCard({ number, title, description }) {
           mb: 2,
           textAlign: { xs: "center", sm: "center", md: "left" },
           fontFamily: "Fraunces",
-          fontSize: { xs: "1.5rem", sm: "2rem", md: "3rem", lg: "3rem" },
+          fontSize: { xs: "2.5rem", sm: "2.5rem", md: "3rem", lg: "3rem" },
         }}
       >
         {number}
@@ -28,7 +28,7 @@ function HiwCard({ number, title, description }) {
           textAlign: { xs: "center", sm: "center", md: "left" },
           fontFamily: "Fraunces",
           fontWeight: { xs: 400, sm: 400, md: 900, lg: 900 },
-          fontSize: { xs: "1rem", sm: "1rem", md: "1.25rem", lg: "1.25rem" },
+          fontSize: { xs: "1.25rem", sm: "1.5rem", md: "1.5rem", lg: "1.5rem" },
         }}
       >
         {title}
@@ -38,7 +38,7 @@ function HiwCard({ number, title, description }) {
         sx={{ 
           width: { xs: "100%", sm: "100%", md: "300px" },
           textAlign: { xs: "center", sm: "center", md: "left" },
-          fontSize: { xs: "0.8rem", sm: "0.8rem", md: "1rem", lg: "1rem" },
+          fontSize: { xs: "0.9rem", sm: "0.9rem", md: "1rem", lg: "1rem" },
         }}
       >
         {description}
